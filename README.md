@@ -6,7 +6,7 @@ Le  programme  C#,  en  plus  de  la  gestion  du  jeu,  sera chargé  de  crée
 
 La page web pourra récupérer à partir du serveur dédié, le flux Json associé à un fichier auparavant déposé afin de procéder à l'affichage de la partie.
 
-## Partie gameplay en C#
+## Partie gameplay en C# <br> Fait en intégralité par Lohan (moi-même)
 
 ### Situation de départ :
 
@@ -41,14 +41,25 @@ Bonus : Si la somme de la partie mineure atteint 63 le joueur reçoit un bonus d
 
 ### Un tour se déroule de la façon suivante :
 
-\*Le joueur peut effectuer jusqu'à 3 lancés des 5 dés
-\*1er lancé : le joueur lance les 5 dés
-\*Le joueur indique les dés à garder, les autres vont être relancés
-\*2ème lancé (facultatif) le joueur relance les dés non gardés
-\*Le joueur indique les dés à garder, les autres vont être relancés
-\*3ème lancé (facultatif) le joueur relance les dés non gardés
-\*Le joueur indique son choix parmi les challenges disponibles et se voit affecter le nombre de points correspondants après, ou 0 si les dés obtenus ne remplissent pas les conditions du challenge choisi.
+* Le joueur peut effectuer jusqu'à 3 lancés des 5 dés
+  * 1er lancé : le joueur lance les 5 dés
+    * Le joueur indique les dés à garder, les autres vont être relancés
+  * 2ème lancé (facultatif) le joueur relance les dés non gardés
+    * Le joueur indique les dés à garder, les autres vont être relancés
+  * 3ème lancé (facultatif) le joueur relance les dés non gardés
+* Le joueur indique son choix parmi les challenges disponibles et se voit affecter le nombre de points correspondants après, ou 0 si les dés obtenus ne remplissent pas les conditions du challenge choisi.
 
 Le programme C# orchestre en mode console une partie pour 2 joueurs en gérant les lancés des dés et en proposant à chaque tour les challenges disponibles. Il affiche à chaque tour et pour chaque joueur un récapitulatif clair de la partie en cours afin qu'il puisse
 prendre les bonnes décisions.
 
+![Game Start](Yams_gameplay.png)
+
+## Partie "écran de résultat" en HTML/CSS/JS <br> Fait en intégralité par mon binôme
+
+L'utilisateur pourra choisir de visualiser la partie chargée selon 2 vues différentes : 
+* Vue qui affiche une partie dans sa globalité, 
+* Vue qui affiche une partie tour par tour.
+
+Contrainte : Tous les positionnements se font avec Flexbox
+
+![website](Yams_Website.png)
