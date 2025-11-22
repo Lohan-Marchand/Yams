@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Jeu de Yam's</title>
+    <!-- Titre de la page -->
+    <meta charset="utf-8">
+    <!-- Spécifie l'encodage des caractères -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Lien vers la bibliothèque Font Awesome pour les icônes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Assure que la page soit responsive sur tous les appareils -->
+</head>
+
+<body>
+    <!-- Bouton pour changer le thème (clair/sombre) -->
+    <button id="theme-toggle" class="theme-button">
+        <i class="fas fa-moon"></i> Dark Mode <i class="fas fa-moon"></i> <!-- Icône de la lune et texte pour le mode sombre -->
+    </button>
+
+    <!-- En-tête du jeu -->
+    <header>
+        <h1 id="title">Jeu de Yam's</h1>
+        <!-- Titre principal du jeu -->
+        <form id="textForm">
+            <!-- Formulaire pour entrer le code de jeu -->
+            <label for="game-code">Saisir le code du jeu:</label>
+            <!-- Label pour le champ de texte -->
+            <input type="text" id="game-code" name="game-code">
+            <!-- Champ de saisie pour entrer le code de jeu -->
+            <button id="submit">Envoyer</button>
+            <!-- Bouton pour soumettre le code -->
+        </form>
+        <!-- Choix d'un mode de publicité -->
+        <nav>
+            <a href="Affichage_complet.html">Affichage complet</a>
+            <a href="Affichage_simple.html">Affichage simple</a>
+        </nav>
+    </header>
+
+    <!-- Interface du jeu -->
+    <section class="game-info">
+        <button class="prev-turn" id="prev-turn"></button>
+        <!-- Bouton pour la tour précédente -->
+
+        <div class="curr-turn" id="curr-turn"></div>
+        <!-- Section pour afficher le tour actuel -->
+
+        <button class="next-turn" id="next-turn"></button>
+        <!-- Bouton pour le tour suivant -->
+    </section>
+
+    <!-- Section pour afficher les résultats du jeu -->
+    <section class="game-results" id="gameResults"></section>
+
+    <!-- Inclusion du fichier JavaScript -->
+    <script src="Affichage_complet.js"></script>
+</body>
+
+</html>
